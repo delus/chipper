@@ -64,7 +64,7 @@ class DocumentProcessor:
         self.document_store = InMemoryDocumentStore()
         self.converter = TextFileToDocument(store_full_path=False)
         self.cleaner = DocumentCleaner(
-            ascii_only=True,
+            ascii_only=False,
             remove_empty_lines=True,
             remove_extra_whitespaces=True,
         )
